@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-feature-settings: "palt";
+  text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*-------------------------
+  グローバル
+-------------------------*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+}
+
+/*-------------------------
+  ヘッダー
+-------------------------*/
+.gl-header {
+  height: 82px;
+  background-color: #343a40;
+  padding-top: 30px;
+}
+
+.gl-header>.container {
+  overflow: hidden;
+}
+
+.logo a {
+  display: block;
+  width: 154px;
+  height: 25px;
+  background: url("../images/logo.jpg") 0 0 / contain no-repeat;
+  text-indent: -9999px;
+  float: left;
+  margin-right: 42px;
+}
+
+.gl-nav li {
+  float: left;
+}
+
+.gl-nav li a {
+  color: #d4d3d3;
+  line-height: 1;
+}
+
+.gl-nav li:last-of-type {
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .gl-header {
+    height: 110px;
+  }
+
+  .logo a {
+    margin: auto;
+    float: none;
+  }
+
+  .gl-nav ul {
+    position: relative;
+    left: 50%;
+    float: left;
+  }
+
+  .gl-nav li {
+    float: left;
+    position: relative;
+    left: -50%;
+    padding: 15px 0;
+  }
+
+  .gl-nav li a {
+    letter-spacing:.3rem;
+    font-weight: bold;
+  }
+}
+
+/*-------------------------
+  キービジュアル
+-------------------------*/
+.top-hero {
+  height: 400px;
+  background: #343a40 url("../images/mainimg.jpg") center top / cover no-repeat;
+  text-indent: -9999px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-hero {
+    height: 720px;
+    background: #343a40 url("../images/main_sp.jpg") center top / cover no-repeat;
+  }
+}
+
+/*-------------------------
+  メイン
+-------------------------*/
+.top-topics ul {
+  padding-top: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-topics li {
+  width: 350px;
+  float: left;
+  margin-right: 25px;
+}
+
+.top-topics li:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top-topics li {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .top-topics li:last-of-type {
+    margin-bottom: 100px;
+  }
+}
+
+.top-topics img {
+  margin-bottom: 10px;
+}
+
+.top-topics h2 {
+  font-size: 31px;
+  color: #e85000;
+  margin-bottom: 20px;
+  font-weight: normal;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top-topics h2 {
+    font-weight: bold;
+  }
+}
+
+.top-topics p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+  word-spacing:-3px;
+  margin-bottom: 0;
+}
+
+.btn {
+  padding-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn a {
+  display: block;
+  width: 60px;
+  height: 40px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #e85000;
+  color: #fff;
+}
+
+.btn a:last-of-type {
+  background-color: #ffc108;
+  color: #000;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+/*-------------------------
+  バナー
+-------------------------*/
+.top-banner ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top-banner ul {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .top-banner img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*-------------------------
+  フッター
+-------------------------*/
+.gl-footer {
+  background-color: #343a40;
+  height: 176px;
+}
+
+.gl-footer p {
+  color: #6c757d;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding-top: 50px;
+}
+
+.gl-footer a {
+  color: #e85000;
+}
+
+.gl-footer span {
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .gl-footer {
+  height: 230px;
+  }
+}
